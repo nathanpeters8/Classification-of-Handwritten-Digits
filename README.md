@@ -2,6 +2,14 @@
 ## Summary
 Classifies 70,000 digitized handwritten digits from an MNIST dataset using a stochastic descent classifier (SGDClassifier) and a logistic regression classifier (LogisitcRegression)
 
+## Dependencies
+- python: 3.6.5
+- numpy: 1.14.3
+- matplotlib: 2.2.2
+- scipy: 1.1.0
+- scikit-learn: 0.19.1
+
+
 ## Directory
 | File Name | Description |
 | ----------- | ----------- |
