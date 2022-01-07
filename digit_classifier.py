@@ -135,10 +135,13 @@ def main():
     soft_cmat = get_confusion_matrix(soft_model, X_train[:1000], y_train[:1000])
     sgd_pmat = probability_matrix(sgd_cmat)
     soft_pmat = probability_matrix(soft_cmat)
-
+    
+    print()
+    print()
     for mod in (('SGDClassifier:', probability_matrix(sgd_cmat)),
                         ('Softmax:', probability_matrix(soft_cmat))):
         print(*mod, sep = '\n')
+        print()
 
     plot_probability_matrices(sgd_pmat, soft_pmat)
     plt.show()
